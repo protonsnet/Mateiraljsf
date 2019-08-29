@@ -10,7 +10,7 @@ public class UsuarioRepositorio {
 	
 	public static Usuario getUsuario(String login, String senha) {
 		if (usuarios == null) {
-			usuarios = new ArrayList<Usuario>();
+			usuarios = (List<Usuario>) new ArrayList<Usuario>();
 			Usuario usr = new Usuario("itamir", "itamir");
 			usr.setNome("Itamir");
 			usuarios.add(usr);
