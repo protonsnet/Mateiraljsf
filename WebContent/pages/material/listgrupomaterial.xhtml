@@ -7,7 +7,7 @@
 		<h4>Listagem do grupo material - <h:outputText value="#{usuarioMBean.usuarioLogado.login}"/></h4>
 		
 		<h:form>
-			<h:dataTable value="#{grupoMaterialMBean.classificacaoMaterialModel}" var="grupoMaterial">
+			<h:dataTable value="#{grupoMaterialMBean.grupoMaterialModel}" var="grupoMaterial">
 				<h:column>
 					<f:facet name="header">Código</f:facet>
 					<h:outputText value="#{grupoMaterial.codigo}"/>

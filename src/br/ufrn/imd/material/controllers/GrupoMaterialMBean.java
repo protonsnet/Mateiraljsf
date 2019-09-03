@@ -48,7 +48,7 @@ public class GrupoMaterialMBean implements Serializable{
 	
 	public String listargrupoMateriais() {
 		grupoMaterialModel = new ListDataModel<GrupoMaterial>(GrupoMaterialRepositorio.listgrupoMaterial());
-		return "/pages/grupomaterial.list.jsf";
+		return "/pages/material/listgrupomaterial.jsf";
 	}
 	
 	public String cadastrargrupoMaterial() {

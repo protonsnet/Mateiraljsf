@@ -1,5 +1,6 @@
 package br.ufrn.imd.material.dominio;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Material {
@@ -8,6 +9,113 @@ public class Material {
 	private String descricao;
 	private Date dataCadastro;
 	private Usuario usuarioCadastro;
+
+	private String nome;
+	private String especificacao;
+	private GrupoMaterial grupoMaterial;
+	private int estoqueMinimo;
+	private int pontoPedido;
+	private UnidadeMedida unidadeEstoque;
+	private UnidadeMedida unidadeEntrada;
+	private BigDecimal fatorConversaoEntrada;
+	private UnidadeMedida unidadeSaida;
+	private BigDecimal fatorConversaoSaida;
+	private String dadosAdicionais;
+	private ClassificacaoMaterial classificacao;
+	private int catmat;
+	private String condicaoAmazenagem;
+	private StatusMaterial status;
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getEspecificacao() {
+		return especificacao;
+	}
+	public void setEspecificacao(String especificacao) {
+		this.especificacao = especificacao;
+	}
+	public GrupoMaterial getGrupoMaterial() {
+		return grupoMaterial;
+	}
+	public void setGrupoMaterial(GrupoMaterial grupoMaterial) {
+		this.grupoMaterial = grupoMaterial;
+	}
+	public int getEstoqueMinimo() {
+		return estoqueMinimo;
+	}
+	public void setEstoqueMinimo(int estoqueMinimo) {
+		this.estoqueMinimo = estoqueMinimo;
+	}
+	public int getPontoPedido() {
+		return pontoPedido;
+	}
+	public void setPontoPedido(int pontoPedido) {
+		this.pontoPedido = pontoPedido;
+	}
+	public UnidadeMedida getUnidadeEstoque() {
+		return unidadeEstoque;
+	}
+	public void setUnidadeEstoque(UnidadeMedida unidadeEstoque) {
+		this.unidadeEstoque = unidadeEstoque;
+	}
+	public UnidadeMedida getUnidadeEntrada() {
+		return unidadeEntrada;
+	}
+	public void setUnidadeEntrada(UnidadeMedida unidadeEntrada) {
+		this.unidadeEntrada = unidadeEntrada;
+	}
+	public BigDecimal getFatorConversaoEntrada() {
+		return fatorConversaoEntrada;
+	}
+	public void setFatorConversaoEntrada(BigDecimal fatorConversaoEntrada) {
+		this.fatorConversaoEntrada = fatorConversaoEntrada;
+	}
+	public UnidadeMedida getUnidadeSaida() {
+		return unidadeSaida;
+	}
+	public void setUnidadeSaida(UnidadeMedida unidadeSaida) {
+		this.unidadeSaida = unidadeSaida;
+	}
+	public BigDecimal getFatorConversaoSaida() {
+		return fatorConversaoSaida;
+	}
+	public void setFatorConversaoSaida(BigDecimal fatorConversaoSaida) {
+		this.fatorConversaoSaida = fatorConversaoSaida;
+	}
+	public String getDadosAdicionais() {
+		return dadosAdicionais;
+	}
+	public void setDadosAdicionais(String dadosAdicionais) {
+		this.dadosAdicionais = dadosAdicionais;
+	}
+	public ClassificacaoMaterial getClassificacao() {
+		return classificacao;
+	}
+	public void setClassificacao(ClassificacaoMaterial classificacao) {
+		this.classificacao = classificacao;
+	}
+	public int getCatmat() {
+		return catmat;
+	}
+	public void setCatmat(int catmat) {
+		this.catmat = catmat;
+	}
+	public String getCondicaoAmazenagem() {
+		return condicaoAmazenagem;
+	}
+	public void setCondicaoAmazenagem(String condicaoAmazenagem) {
+		this.condicaoAmazenagem = condicaoAmazenagem;
+	}
+	public StatusMaterial getStatus() {
+		return status;
+	}
+	public void setStatus(StatusMaterial status) {
+		this.status = status;
+	}
 	
 	public int getId() {
 		return id;

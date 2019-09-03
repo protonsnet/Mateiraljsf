@@ -56,7 +56,7 @@ public class ClassificacaoMaterialMBean implements Serializable{
 	
 	public String listarclassificacaoMateriais() {
 		classificacaoMaterialModel = new ListDataModel<ClassificacaoMaterial>(ClassificacaoMaterialRepositorio.listclassificacaoMaterial());
-		return "/pages/classificacaomaterial.list.jsf";
+		return "/pages/material/listclassificacaomaterial.jsf";
 	}
 	
 	public String cadastrarclassificacaoMaterial() {

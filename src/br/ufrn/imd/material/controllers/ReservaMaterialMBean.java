@@ -47,9 +47,9 @@ public class ReservaMaterialMBean implements Serializable{
 		return "/pages/material/formreservamaterial.jsf";
 	}
 	
-	public String listarreservaMateriais() {
+	public String listarreservaMaterial() {
 		reservaMaterialModel = new ListDataModel<ReservaMaterial>(ReservaMaterialRepositorio.listreservaMaterial());
-		return "/pages/reservamaterial.list.jsf";
+		return "/pages/material/listreservamaterial.jsf";
 	}
 	
 	public String cadastrarreservaMaterial() {

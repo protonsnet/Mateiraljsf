@@ -10,7 +10,7 @@ public class MaterialRepositorio {
 
 	public static void adicionar(Material material) {
 		if(materiais == null) {
-			materiais = new ArrayList<Material>();
+			materiais = new ArrayList<Material> ();
 		}
 		materiais.add(material);
 	}
@@ -19,7 +19,7 @@ public class MaterialRepositorio {
 		materiais.remove(material);
 	}
 	
-	public static List<Material> listMateriais(){
+	public static List<Material> listMaterial(){
 		return materiais;
 	}
 }

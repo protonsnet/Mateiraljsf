@@ -29,8 +29,8 @@ public class MaterialMBean implements Serializable{
 	}
 	
 	public String listarMateriais() {
-		materiaisModel = new ListDataModel<Material>(MaterialRepositorio.listMateriais());
-		return "/pages/material.list.jsf";
+		materiaisModel = new ListDataModel<Material>(MaterialRepositorio.listMaterial());
+		return "/pages/material/list.jsf";
 	}
 	
 	public String cadastrarMaterial() {
@@ -43,7 +43,7 @@ public class MaterialMBean implements Serializable{
 	public String removerMaterial() {
 		Material materialRemovido = materiaisModel.getRowData();
 		MaterialRepositorio.remover(materialRemovido);
-		materiaisModel = new ListDataModel<Material>(MaterialRepositorio.listMateriais());
+		materiaisModel = new ListDataModel<Material>(MaterialRepositorio.listMaterial());
 		return "/pages/material/list.jsf";
 	}
 	
